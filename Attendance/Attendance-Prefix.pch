@@ -1,0 +1,44 @@
+//
+// Prefix header for all source files of the 'Attendance' target in the 'Attendance' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+    #import <BlocksKit/BlocksKit.h>
+#endif
+
+// リリース版でNSLogを出力しないようにする
+#ifdef DEBUG
+    #ifndef NSLog
+        #define NSLog(m, args...)   NSLog(m, ##args)
+    #endif
+#else
+    #ifndef NSLog
+        #define NSLog(m, args...)
+    #endif
+#endif
+
+// メソッド開始・終了ログの埋め込み
+#ifdef DEBUG
+    #ifndef ENTER_METHOD
+        #define ENTER_METHOD    NSLog(@"%s [Line %d] Enter", __func__, __LINE__);
+    #endif
+    #ifndef LEAVE_METHOD
+        #define LEAVE_METHOD    NSLog(@"%s [Line %d] Leave", __func__, __LINE__);
+    #endif
+#else
+    #ifndef ENTER_METHOD
+        #define ENTER_METHOD
+    #endif
+    #ifndef LEAVE_METHOD
+        #define LEAVE_METHOD
+    #endif
+#endif

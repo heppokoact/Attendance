@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1487" systemVersion="11E53" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Attendance" representedClassName="Attendance" syncable="YES">
+        <attribute name="attCat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="attribute" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="chapterNo" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="dispCat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="empName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="empNo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="grpName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="handoutName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="handoutSitCat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="pjName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="postName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rcptName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rcptSitCat" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="remCol" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="rowNo" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="sectionNo" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="seqNo" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Attendance" positionX="0" positionY="0" width="128" height="315"/>
+    </elements>
+</model>

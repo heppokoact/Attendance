@@ -1,0 +1,13 @@
+【playの実行について】
+Javaの1.7でしか動かない。
+AttendanceWS直下にrun_play.shがあるので、それを実行して起動する。
+
+【デバッグについて】
+Build SettingsのApple LLVM 6.0 - Processing -> Processor Macros -> Debugに
+DEBUG=1
+を追加
+あるいはSchemaの切り替えで制御したほうが良いのかも・・・
+
+【WEBサービスのURLについて】
+アプリケーション内の設定では下記URLを指定する。
+http://localhost:9000/AttendanceWS
